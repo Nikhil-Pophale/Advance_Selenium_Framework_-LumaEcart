@@ -60,7 +60,7 @@ public class Common {
     }
     public  void takeScreenShot() throws IOException {
         File file=((TakesScreenshot)DriverManagerTH_Local.getDriver()).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(file,new File("C:\\Users\\nikpo\\IdeaProjects\\Katloan_Cura\\src\\main\\java\\org\\TTA\\ScreenShots"+faker.randomno()+".jpg"));
+        FileUtils.copyFile(file,new File("C:\\Users\\nikpo\\IdeaProjects\\LumaEcart\\src\\main\\java\\org\\TTA\\ScreenShots"+faker.randomno()+".jpg"));
 
     }
 }
