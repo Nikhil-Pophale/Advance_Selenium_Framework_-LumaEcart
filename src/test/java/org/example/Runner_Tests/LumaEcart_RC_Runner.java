@@ -1,10 +1,8 @@
-package org.example.VWOLogin_tests;
+package org.example.Runner_Tests;
 
 import io.qameta.allure.Description;
-import org.TTA.Driver.DriverManagerTH_Local;
 import org.TTA.Pages.PageObjectModel.Login;
 import org.example.basic.BaseTest;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 

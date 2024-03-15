@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/nikpo/IdeaProjects/LumaEcart">
         <classes>
-            <class name="org.example.VWOLogin_tests.LumaEcart_RC_Runner">
+            <class name="org.example.Runner_Tests.LumaEcart_RC_Runner">
                 <methods>
                     <include name="TC_001"/>
                     <include name="TC_002"/>
