@@ -14,7 +14,7 @@ Framework Managment      -TestNG
 
 Dependency Management - Maveen
 
-Verification and Checkpoints - AssertJ, POM
+Verification and Checkpoints - AssertJ , SoftAssert 
 
 Reporting Purpose - Allure Report ,Html report 
 
