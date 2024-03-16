@@ -4,15 +4,14 @@ Author - Nikhil Pophale
 
 Email : nikhilpophale01@gmail.com
 
-Tech stack used described below:
+**Tech stack used described below:**
 
-Java, Selenium, TestNG
-
-Maven, AssertJ, POM
-
-Thread Local Support → Thread Safety
-
-Allure Report
+Programming language as -Java
+Interaction with Browser -Selenium
+Framework Managment      -TestNG
+Dependency Management - Maveen
+Verification and Checkpoints - AssertJ, POM
+Reporting Purpose - Allure Report ,Html report 
 
 TestNG, @Test, Before and After Method.
 
