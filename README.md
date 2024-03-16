@@ -6,17 +6,17 @@ Email : nikhilpophale01@gmail.com
 
 **Tech stack used described below:**
 
-Programming language as -Java
+Programming language as          -Java
 
-Interaction with Browser -Selenium
+Interaction with Browser         -Selenium
 
-Framework Managment      -TestNG
+Framework Managment              -TestNG
 
-Dependency Management - Maveen
+Dependency Management            - Maveen
 
-Verification and Checkpoints - AssertJ , SoftAssert 
+Verification and Checkpoints     - AssertJ , SoftAssert 
 
-Reporting Purpose - Allure Report ,Html report 
+Reporting Purpose                - Allure Report ,Html report 
 
 TestNG, @Test, Before and After Method.
 
