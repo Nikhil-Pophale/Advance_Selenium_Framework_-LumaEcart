@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/nikpo/IdeaProjects/LumaEcart">
+        <classes>
+            <class name="org.example.Runner_Tests.LumaEcart_RC_Runner">
+                <methods>
+                    <include name="TC_006"/>
+                    <include name="TC_007"/>
+                    <include name="TC_008"/>
+                    <include name="TC_009"/>
+                    <include name="TC_010"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

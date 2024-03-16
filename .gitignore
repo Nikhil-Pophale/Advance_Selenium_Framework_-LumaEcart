@@ -257,7 +257,7 @@ allure-report
 allure-results
 # Log file
 *.log
-
+Utils
 # BlueJ files
 *.ctxt
 

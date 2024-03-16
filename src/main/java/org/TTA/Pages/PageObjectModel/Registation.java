@@ -25,13 +25,14 @@ public class Registation extends Common {
     By crreateac_btn = By.xpath("//button[@title=\"Create an Account\"]");
     By IE_error_text = By.xpath("//*[@id=\"maincontent\"]/div[2]/div[2]/div/div/div");
     By IEmail_error = By.id("email_address-error");
+    By WeakPassword_error = By.id("password-error");
     By requiredfield_error = By.id("firstname-error");
     //    By confirmmsg = By.xpath("//*[@id=\"maincontent\"]/div[1]/div[2]/div/div/div");
     By confirmmsg = By.xpath("//*[text()=\"Thank you for registering with Main Website Store.\"]");
 
 
-    @Description("TC_002\tVerify Registration with  Invalid email and appropriate error message is displayed")
-    public Registation TC_002() {
+    @Description("TC_002 Verify Registration with  Invalid email and appropriate error message is displayed")
+    public Registation Registration_with_Invalid_email() {
         enterInput(firstname,faker.fname());
         enterInput(lastname, faker.lname());
         enterInput(email, "invalidemail");
@@ -48,6 +49,16 @@ public class Registation extends Common {
         return getElemnet(IE_error_text).getText();
 
     }
+    public String WeakPassError() {
+        presenceOfElement(WeakPassword_error);
+        return getElemnet(WeakPassword_error).getText();
+
+    }
+    public String EmailErrormsg() {
+        presenceOfElement(IEmail_error);
+        return getElemnet(IEmail_error).getText();
+
+    }
     public String ReqFieldError() {
         presenceOfElement(requiredfield_error);
         return getElemnet(requiredfield_error).getText();
@@ -55,15 +66,15 @@ public class Registation extends Common {
     }
 
     @Description("TC_003 -Verify Registration with already registered email and respective error-msg pop-up")
-    public Registation TC_003() throws InterruptedException {
+    public Registation Registration_with_already_registered_email() throws InterruptedException {
 
         enterInput(firstname, "Simran");
-        enterInput(lastname, "kk");
+        enterInput(lastname, "kaur");
         enterInput(email, "joebieden@gmail.com");
         enterInput(password, "7878198@This");
         enterInput(confirm_password, "7878198@This");
         clickElemnet(crreateac_btn);
-        Thread.sleep(5000);
+        Thread.sleep(9000);
         return this;
 
     }
@@ -86,7 +97,7 @@ public class Registation extends Common {
 
 
     @Description("TC_001 -Verify Registration with all valid data")
-    public Registation TC_001() throws IOException {
+    public Registation Registration_with_all_valid_data() throws IOException {
 
         enterInput(firstname, faker.fname());
         enterInput(lastname, faker.lname());
@@ -94,11 +105,21 @@ public class Registation extends Common {
         enterInput(password, "7878198@Tthis");
         enterInput(confirm_password, "7878198@Tthis");
         clickElemnet(crreateac_btn);
-        takeScreenShot();
+
 //        presenceOfElement(confirmmsg).getText();
 //        System.out.println(getElemnet(confirmmsg).getText());
 //        Assert.assertEquals(getElemnet(confirmmsg).getText(), "Thank you for registering with Main Website Store.");
 
+        return this;
+    }
+    @Description("TC_001 Verify Registration with Invalid weak password ")
+    public Registation Registration_with_Invalid_weak_password() throws IOException {
+        enterInput(firstname, faker.fname());
+        enterInput(lastname, faker.lname());
+        enterInput(email, faker.email());
+        enterInput(password, "78Tt");
+        enterInput(confirm_password, "78Tt");
+        clickElemnet(crreateac_btn);
         return this;
     }
 
