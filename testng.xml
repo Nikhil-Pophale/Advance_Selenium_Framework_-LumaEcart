@@ -14,6 +14,15 @@
                     <include name="TC_008"/>
                     <include name="TC_009"/>
                     <include name="TC_010"/>
+                    <include name="TC_011"/>
+                    <include name="TC_012"/>
+                    <include name="TC_013"/>
+                    <include name="TC_014"/>
+                    <include name="TC_015"/>
+                    <include name="TC_016"/>
+                    <include name="TC_017"/>
+                    <include name="TC_018"/>
+                    <include name="TC_019"/>
                 </methods>
             </class>
         </classes>
