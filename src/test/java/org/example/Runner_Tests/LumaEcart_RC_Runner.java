@@ -66,7 +66,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
 
     @Test(priority = 3)
     @Description("Verify Registration with  Invalid email and appropriate error message is displayed")
-    public void TC_006() throws Exception {
+    public void TC_005() throws Exception {
         Registation registation = new Registation();
         registation.openUrl("https://magento.softwaretestingboard.com/customer/account/create/");
         registation.Registration_with_Invalid_email();
@@ -77,7 +77,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
 
     @Description("Verify Registration with  Invalid email and appropriate error message is displayed")
     @Test(priority = 5)
-    public void TC_007() throws Exception {
+    public void TC_006() throws Exception {
         Registation registation = new Registation();
         registation.openUrl("https://magento.softwaretestingboard.com/customer/account/create/");
         registation.Registration_with_already_registered_email();
@@ -88,7 +88,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
 
     @Description("Verify Registration with  Keeping all the fields empty")
     @Test(priority = 6)
-    public void TC_008() throws Exception {
+    public void TC_007() throws Exception {
         Registation registation = new Registation();
         registation.openUrl("https://magento.softwaretestingboard.com/customer/account/create/");
         registation.TC_004();
@@ -99,7 +99,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
 
     @Test(priority = 7)
     @Description("Verify Registration with Invalid weak password ")
-    public void TC_009() throws Exception {
+    public void TC_008() throws Exception {
         Registation registation = new Registation();
         registation.openUrl("https://magento.softwaretestingboard.com/customer/account/create/");
         registation.Registration_with_Invalid_weak_password();
@@ -110,7 +110,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
 
     @Test(priority = 8)
     @Description("Verify Registration with Invalid weak password ")
-    public void TC_010() throws Exception {
+    public void TC_009() throws Exception {
         Registation registation = new Registation();
         registation.openUrl("https://magento.softwaretestingboard.com/customer/account/create/");
         registation.Registration_with_all_valid_data();
@@ -121,7 +121,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
 
     @Test(priority = 9)
     @Description("Verify Registration with Invalid weak password ")
-    public void TC_011() throws Exception {
+    public void TC_010() throws Exception {
         Login login = new Login();
         login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
         login.Verify_Login_with_valid_email_and_password();
@@ -134,7 +134,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
 
     @Test(priority = 10)
     @Description("Verify Registration with Invalid weak password ")
-    public void TC_012() throws Exception {
+    public void TC_011() throws Exception {
         Login login = new Login();
         login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
         login.Verify_Login_with_valid_email_and_password();
@@ -147,7 +147,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
 
     @Test(priority = 11)
     @Description("Verify Registration with Invalid weak password ")
-    public void TC_013() throws Exception {
+    public void TC_012() throws Exception {
         Login login = new Login();
         login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
         login.Verify_Login_with_valid_email_and_password();
@@ -160,7 +160,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
 
     @Test(priority = 12)
     @Description("Verify Registration with Invalid weak password ")
-    public void TC_014() throws Exception {
+    public void TC_013() throws Exception {
         Login login = new Login();
         login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
         login.Verify_Login_with_valid_email_and_password();
@@ -173,7 +173,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
 
     @Test(priority = 13)
     @Description("Verify Registration with Invalid weak password ")
-    public void TC_015() throws Exception {
+    public void TC_014() throws Exception {
         Login login = new Login();
         login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
         login.Verify_Login_with_valid_email_and_password();
@@ -184,7 +184,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
 
     @Test(priority = 14)
     @Description("Verify User can place the order")
-    public void TC_016() throws Exception {
+    public void TC_015() throws Exception {
         Login login = new Login();
         login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
         login.Verify_Login_with_valid_email_and_password();
@@ -197,7 +197,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
 
     @Test(priority = 15)
     @Description("Verify Checkout without selecting Shipping methods")
-    public void TC_017() throws Exception {
+    public void TC_016() throws Exception {
         Login login = new Login();
         login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
         login.Verify_Login_with_valid_email_and_password();
@@ -210,7 +210,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
 
     @Test(priority = 16)
     @Description("Verify Order_billing_reflected_on_checkout_page")
-    public void TC_018() throws Exception {
+    public void TC_017() throws Exception {
         Login login = new Login();
         login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
         login.Verify_Login_with_valid_email_and_password();
@@ -223,7 +223,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
 
     @Test(priority = 17)
     @Description("Verify purchase_with_applying_invalid_discount_code")
-    public void TC_019() throws Exception {
+    public void TC_018() throws Exception {
         Login login = new Login();
         login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
         login.Verify_Login_with_valid_email_and_password();
