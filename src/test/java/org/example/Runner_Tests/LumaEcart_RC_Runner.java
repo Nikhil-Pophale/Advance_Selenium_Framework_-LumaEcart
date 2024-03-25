@@ -52,7 +52,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
         System.out.println(loginarror);
     }
 
-    @Test(priority = 3)
+    @Test(priority = 2)
     @Description("Verify Login with keeping password fields empty")
     public void TC_004() throws Exception {
         Login login = new Login();
@@ -76,7 +76,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
     }
 
     @Description("Verify Registration with  Invalid email and appropriate error message is displayed")
-    @Test
+    @Test(priority = 5)
     public void TC_007() throws Exception {
         Registation registation = new Registation();
         registation.openUrl("https://magento.softwaretestingboard.com/customer/account/create/");
@@ -87,7 +87,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
     }
 
     @Description("Verify Registration with  Keeping all the fields empty")
-    @Test
+    @Test(priority = 6)
     public void TC_008() throws Exception {
         Registation registation = new Registation();
         registation.openUrl("https://magento.softwaretestingboard.com/customer/account/create/");
@@ -97,7 +97,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
         System.out.println(req_field_error);
     }
 
-    @Test
+    @Test(priority = 7)
     @Description("Verify Registration with Invalid weak password ")
     public void TC_009() throws Exception {
         Registation registation = new Registation();
@@ -108,7 +108,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
         System.out.println(WeakPassError);
     }
 
-    @Test
+    @Test(priority = 8)
     @Description("Verify Registration with Invalid weak password ")
     public void TC_010() throws Exception {
         Registation registation = new Registation();
@@ -119,7 +119,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
         System.out.println(ConfirmRegtxt);
     }
 
-    @Test
+    @Test(priority = 9)
     @Description("Verify Registration with Invalid weak password ")
     public void TC_011() throws Exception {
         Login login = new Login();
@@ -132,7 +132,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
         System.out.println(OtofStock);
     }
 
-    @Test
+    @Test(priority = 10)
     @Description("Verify Registration with Invalid weak password ")
     public void TC_012() throws Exception {
         Login login = new Login();
@@ -145,7 +145,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
 //        System.out.println(OtofStock);
     }
 
-    @Test
+    @Test(priority = 11)
     @Description("Verify Registration with Invalid weak password ")
     public void TC_013() throws Exception {
         Login login = new Login();
@@ -158,7 +158,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
         System.out.println(AddedtoWishlistNotify);
     }
 
-    @Test
+    @Test(priority = 12)
     @Description("Verify Registration with Invalid weak password ")
     public void TC_014() throws Exception {
         Login login = new Login();
@@ -171,7 +171,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
         System.out.println(AddedtoWishlistNotify);
     }
 
-    @Test
+    @Test(priority = 13)
     @Description("Verify Registration with Invalid weak password ")
     public void TC_015() throws Exception {
         Login login = new Login();
@@ -182,7 +182,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
 
     }
 
-    @Test
+    @Test(priority = 14)
     @Description("Verify User can place the order")
     public void TC_016() throws Exception {
         Login login = new Login();
@@ -195,7 +195,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
         System.out.println(ThanksMsg);
     }
 
-    @Test
+    @Test(priority = 15)
     @Description("Verify Checkout without selecting Shipping methods")
     public void TC_017() throws Exception {
         Login login = new Login();
@@ -208,7 +208,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
         System.out.println(ErrorMsg);
     }
 
-    @Test
+    @Test(priority = 16)
     @Description("Verify Order_billing_reflected_on_checkout_page")
     public void TC_018() throws Exception {
         Login login = new Login();
@@ -221,7 +221,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
         System.out.println(address);
     }
 
-    @Test
+    @Test(priority = 17)
     @Description("Verify purchase_with_applying_invalid_discount_code")
     public void TC_019() throws Exception {
         Login login = new Login();

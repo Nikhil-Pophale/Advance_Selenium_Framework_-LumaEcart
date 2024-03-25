@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 public class Checkout extends Common {
     private By shippingAddress = By.xpath("//div[@class=\"shipping-address-item selected-item\"]");
     private By NextBtn = By.xpath("//button[@data-role=\"opc-continue\"]");
+    private By NextBtn2 = By.xpath("//span[text()=\"Next\"]");
     private By cartIcon = By.xpath("//a[@class=\"action showcart\"]");
     //    private By cartIcon = By.xpath("//span[text()=\"My Cart\"]");
     private By procedtocheckoutbtn = By.id("top-cart-btn-checkout");
@@ -39,6 +40,7 @@ public class Checkout extends Common {
         clickElemnet(NextBtn);
         FluentWait(placeOrderbtn);
         clickElemnet(placeOrderbtn);
+        FluentWait(confirmationMsg);
         System.out.println(confirmatoionMsg());
         System.out.println(getOrderid());
 
@@ -63,8 +65,11 @@ public class Checkout extends Common {
         clickElemnet(cartIcon);
         FluentWait(procedtocheckoutbtn);
         clickElemnet(procedtocheckoutbtn);
-        elementToBeClickableFluentWait(NextBtn);
-        clickElemnet(NextBtn);
+        Thread.sleep(20000);
+        FluentWait(NextBtn2);
+        clickElemnet(NextBtn2);
+        FluentWait(shippingMethodMissingErrorMsg);
+        System.out.println(shippingMethodMissingErrorMsgx());
         return this;
     }
 
