@@ -44,15 +44,13 @@ public class Common {
     }
 
     public void FluentWait(By locator) {
-        WebElement wait = new FluentWait<WebDriver>(DriverManagerTH_Local.getDriver())
-                .withTimeout(Duration.ofSeconds(30))
-                .pollingEvery(Duration.ofSeconds(2))
-                .until(ExpectedConditions.visibilityOfElementLocated(locator));
+        WebDriverWait wait = new WebDriverWait(DriverManagerTH_Local.getDriver(),Duration.ofSeconds(50));
+                wait.withTimeout(Duration.ofSeconds(50)).pollingEvery(Duration.ofSeconds(2)).until(ExpectedConditions.visibilityOfElementLocated(locator));
 
     }
     public void elementToBeClickableFluentWait(By locator) {
         WebElement wait = new FluentWait<WebDriver>(DriverManagerTH_Local.getDriver())
-                .withTimeout(Duration.ofSeconds(30))
+                .withTimeout(Duration.ofSeconds(50))
                 .pollingEvery(Duration.ofSeconds(2))
                 .until(ExpectedConditions.elementToBeClickable(locator));
 

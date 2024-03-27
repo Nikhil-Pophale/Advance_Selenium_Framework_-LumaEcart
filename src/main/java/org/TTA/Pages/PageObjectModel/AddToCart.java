@@ -71,17 +71,19 @@ public class AddToCart extends Common {
         clickElemnet(gearCategory);
         clickElemnet(itemBottle);
         DriverManagerTH_Local.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        FluentWait(addtoWishlistbtn);
         clickElemnet(addtoWishlistbtn);
 
         return this;
     }
 
     public AddToCart removeFromCart() throws InterruptedException {
-        clickElemnet(lumalogo);
-        clickElemnet(gearCategory);
-        clickElemnet(itemBottle);
-        FluentWait(addtocartbtn);
-        clickElemnet(addtocartbtn);
+//        clickElemnet(lumalogo);
+//        clickElemnet(gearCategory);
+//        clickElemnet(itemBottle);
+//        FluentWait(addtocartbtn);
+//        clickElemnet(addtocartbtn);
+        addtoCart();
         FluentWait(cartIcon);
         clickElemnet(cartIcon);
         FluentWait(viewCart);

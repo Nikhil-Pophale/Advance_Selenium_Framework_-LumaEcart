@@ -65,9 +65,9 @@ public class Checkout extends Common {
         clickElemnet(cartIcon);
         FluentWait(procedtocheckoutbtn);
         clickElemnet(procedtocheckoutbtn);
-        Thread.sleep(20000);
-        FluentWait(NextBtn2);
-        clickElemnet(NextBtn2);
+        FluentWait(NextBtn);
+        clickElemnet(NextBtn);
+        Thread.sleep(7000);
         FluentWait(shippingMethodMissingErrorMsg);
         System.out.println(shippingMethodMissingErrorMsgx());
         return this;

@@ -198,14 +198,13 @@ public class LumaEcart_RC_Runner extends BaseTest {
     @Test(priority = 15)
     @Description("Verify Checkout without selecting Shipping methods")
     public void TC_016() throws Exception {
-        Login login = new Login();
-        login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
-        login.Verify_Login_with_valid_email_and_password();
+        AddToCart addToCart=new AddToCart();
+        addToCart.openUrl("https://magento.softwaretestingboard.com/");
         Checkout checkout = new AddToCart().addtoCart().afterAtoCart();
         checkout.Checkout_without_selecting_Shipping_methods();
         String ErrorMsg = checkout.shippingMethodMissingErrorMsgx();
         Assert.assertEquals(ErrorMsg, "The shipping method is missing. Select the shipping method and try again.");
-        System.out.println(ErrorMsg);
+//        System.out.println(ErrorMsg);
     }
 
     @Test(priority = 16)
