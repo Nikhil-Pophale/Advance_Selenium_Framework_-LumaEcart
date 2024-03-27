@@ -215,9 +215,9 @@ public class LumaEcart_RC_Runner extends BaseTest {
         login.Verify_Login_with_valid_email_and_password();
         Checkout checkout = new AddToCart().addtoCart().afterAtoCart();
         checkout.Order_billing_reflected_on_checkout_page();
-        String address = checkout.billSummary();
-        Assert.assertNotNull(address);
-        System.out.println(address);
+        String bill = checkout.billSummary();
+        Assert.assertNotNull(bill);
+        System.out.println(bill);
     }
 
     @Test(priority = 17)

@@ -3,6 +3,7 @@ package org.TTA.Pages.PageObjectModel;
 import org.TTA.Base.Common;
 import org.TTA.Driver.DriverManagerTH_Local;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 import java.util.concurrent.TimeUnit;
 
@@ -13,7 +14,8 @@ public class Checkout extends Common {
     private By cartIcon = By.xpath("//a[@class=\"action showcart\"]");
     //    private By cartIcon = By.xpath("//span[text()=\"My Cart\"]");
     private By procedtocheckoutbtn = By.id("top-cart-btn-checkout");
-    private By addDiscountCodeBtn = By.xpath("//span[@class=\"action action-toggle\"]/span");
+//    private By addDiscountCodeBtn = By.xpath("//span[@id=\"block-discount-heading\"]");
+    private By addDiscountCodeBtn = By.id("block-discount-heading");
     private By InputDiscountCode = By.id("discount-code");
     private By applyDiscountbtn = By.xpath("//button[@class=\"action action-apply\"]");
     private By invalidDiscountCodeError = By.xpath("//div[text()=\"The coupon code isn't valid. Verify the code and try again.\"]");
@@ -97,12 +99,14 @@ public class Checkout extends Common {
         FluentWait(NextBtn);
         clickElemnet(NextBtn);
 //        pageloadtimeout();
-        elementToBeClickableFluentWait(addDiscountCodeBtn);
+        FluentWait(addDiscountCodeBtn);
+//        ActionClassClick((WebElement) addDiscountCodeBtn);
+        Thread.sleep(9000);
         clickElemnet(addDiscountCodeBtn);
-        elementToBeClickableFluentWait(InputDiscountCode);
+        FluentWait(InputDiscountCode);
         enterInput(InputDiscountCode, "inValidDiscountCode");
         clickElemnet(applyDiscountbtn);
-        FluentWait(invalidDiscountCodeError);
+        presenceOfElement(invalidDiscountCodeError);
         System.out.println(getElemnet(invalidDiscountCodeError).getText());
         return this;
     }
