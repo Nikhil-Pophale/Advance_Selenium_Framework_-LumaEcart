@@ -73,6 +73,7 @@ public class AddToCart extends Common {
         DriverManagerTH_Local.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         FluentWait(addtoWishlistbtn);
         clickElemnet(addtoWishlistbtn);
+        System.out.println(addtoWishlistMsg);
 
         return this;
     }
