@@ -57,11 +57,12 @@ public class AddToCart extends Common {
     public AddToCart addtoCart() throws InterruptedException {
         clickElemnet(lumalogo);
         clickElemnet(gearCategory);
-//        FluentWait(itemBottle);
+        FluentWait(itemBottle);
         clickElemnet(itemBottle);
         Thread.sleep(4000);
         clickElemnet(addtocartbtn);
-        System.out.println(presenceOfElement(addedtocartmsg).getText());
+        presenceOfElement(addedtocartmsg);
+        System.out.println(addedtocartmsg);
 
         return this;
     }
@@ -69,6 +70,7 @@ public class AddToCart extends Common {
     public AddToCart addtoWishlist() throws InterruptedException {
         clickElemnet(lumalogo);
         clickElemnet(gearCategory);
+        FluentWait(itemBottle);
         clickElemnet(itemBottle);
         DriverManagerTH_Local.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         FluentWait(addtoWishlistbtn);
