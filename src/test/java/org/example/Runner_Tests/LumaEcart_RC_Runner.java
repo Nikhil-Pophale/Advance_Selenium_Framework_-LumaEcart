@@ -176,7 +176,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
     public void TC_014() throws Exception {
         Login login = new Login();
         login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
-        login.Verify_Login_with_valid_email_and_password();
+        login.Verify_Login_with_valid_email_and_password().afterLogin();
         AddToCart addToCart = new AddToCart();
         addToCart.removeFromCart();
 
@@ -187,9 +187,13 @@ public class LumaEcart_RC_Runner extends BaseTest {
     public void TC_015() throws Exception {
         Login login = new Login();
         login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
-        login.Verify_Login_with_valid_email_and_password();
-        Checkout checkout = new AddToCart().addtoCart().afterAtoCart();
+        login.Verify_Login_with_valid_email_and_password().afterLogin();
+        AddToCart addToCart=new AddToCart();
+        addToCart.addtoCart();
+        Checkout checkout=new Checkout();
         checkout.placeanOrder();
+//        Checkout checkout = new AddToCart().addtoCart().afterAtoCart();
+//        checkout.placeanOrder();
         String ThanksMsg = checkout.confirmatoionMsg();
         Assert.assertEquals(ThanksMsg, "Thank you for your purchase!");
         System.out.println(ThanksMsg);
