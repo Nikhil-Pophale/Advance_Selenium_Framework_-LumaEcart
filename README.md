@@ -32,11 +32,13 @@ Run Local and on Jenkins Integration
 ![Screenshot (365)](https://github.com/Nikhil-Pophale/LumaEcart_Advance_Selenium_Framework/assets/141396302/05444e5e-c092-4445-a7cb-cef5a324cbd4)
 
 
-**Allure Report**
+**Allure Report >>**
+
+
+![Screenshot (370)](https://github.com/Nikhil-Pophale/LumaEcart_Advance_Selenium_Framework/assets/141396302/ff91e6a4-4b3f-4ba9-b7f2-685d3f71c524)
 
 ![Screenshot (371)](https://github.com/Nikhil-Pophale/LumaEcart_Advance_Selenium_Framework/assets/141396302/570aaf36-f2c5-4280-be3c-02ea95476a71)
 
-![Screenshot (370)](https://github.com/Nikhil-Pophale/LumaEcart_Advance_Selenium_Framework/assets/141396302/ff91e6a4-4b3f-4ba9-b7f2-685d3f71c524)
 
 
 
