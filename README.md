@@ -6,17 +6,21 @@ Email : nikhilpophale01@gmail.com
 
 **Tech stack used described below:**
 
-Programming language as          -Java
+Java 11  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:    &nbsp;&nbsp;Programing language <br />
 
-Interaction with Browser         -Selenium
+Selenium 4.12.0  &nbsp;&nbsp;:    &nbsp;&nbsp;To automate the browser interactions.<br />
 
-Framework Managment              -TestNG
+Maveen &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:    &nbsp;&nbsp;Build & Dependency management<br />
 
-Dependency Management            - Maveen
+TestNg  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:    &nbsp;&nbsp;testing framework ( organize and execute Selenium tests.)<br />
 
-Verification and Checkpoints     - AssertJ , SoftAssert 
+JEnkins  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:    &nbsp;&nbsp;Execute the Test Cases<br />
 
-Reporting Purpose                - Allure Report ,Html report 
+Git      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:    &nbsp;&nbsp;source code management<br />
+
+Allure   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;:    &nbsp;&nbsp;to generate reports.<br />
+
+Verification and Checkpoints &nbsp;&nbsp; : AssertJ , SoftAssert 
 
 TestNG, @Test, Before and After Method.
 
