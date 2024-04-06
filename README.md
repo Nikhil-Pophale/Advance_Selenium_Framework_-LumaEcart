@@ -28,4 +28,7 @@ Run Local and on Jenkins Integration
 
 Secnarios Covered >>
 
-![Screenshot (334)](https://github.com/Nikhil-Pophale/LumaEcart_Advance_Selenium_Framework/assets/141396302/43e5b2ff-e2f1-4583-8e6a-6e5ba3b6abb7)
+![Screenshot (359)](https://github.com/Nikhil-Pophale/LumaEcart_Advance_Selenium_Framework/assets/141396302/d06b3635-68c8-435e-a5d5-5d9e72b66221)
+![Screenshot (360)](https://github.com/Nikhil-Pophale/LumaEcart_Advance_Selenium_Framework/assets/141396302/9ac31287-4f0a-49c3-8fce-f98cee946f92)
+
+
