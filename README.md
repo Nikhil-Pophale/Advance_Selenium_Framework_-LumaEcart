@@ -31,12 +31,12 @@ Run Local and on Jenkins Integration
 
 ![Screenshot (363)](https://github.com/Nikhil-Pophale/LumaEcart_Advance_Selenium_Framework/assets/141396302/98d09800-72fb-46d5-bb66-0ca7959e18d1)
 ![Screenshot (365)](https://github.com/Nikhil-Pophale/LumaEcart_Advance_Selenium_Framework/assets/141396302/05444e5e-c092-4445-a7cb-cef5a324cbd4)
-**_________________________________________________________________________________________________________________________________________________**
+**________________________________________________________________________________________________________________________**
 
 **FrameworK Overview >>**
 
 ![c (1)](https://github.com/Nikhil-Pophale/LumaEcart_Advance_Selenium_Framework/assets/141396302/5a872be2-d6c6-4d5d-81a6-d7f9fbec141e)
-**_________________________________________________________________________________________________________________________________________________**
+**________________________________________________________________________________________________________________________**
 
 
 **Allure Report >>**
@@ -46,6 +46,7 @@ Run Local and on Jenkins Integration
 
 ![Screenshot (371)](https://github.com/Nikhil-Pophale/LumaEcart_Advance_Selenium_Framework/assets/141396302/570aaf36-f2c5-4280-be3c-02ea95476a71)
 
+**________________________________________________________________________________________________________________________**
 
 
 
