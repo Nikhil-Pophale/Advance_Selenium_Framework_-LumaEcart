@@ -25,7 +25,7 @@ TestNG, @Test, Before and After Method.
 
 Run Local and on Jenkins Integration
 
-**_________________________________________________________________________________________________________________________________________________**
+**______________________________________________________________________________________________________________________________________**
 **Secnarios Covered >>**
 
 ![Screenshot (363)](https://github.com/Nikhil-Pophale/LumaEcart_Advance_Selenium_Framework/assets/141396302/98d09800-72fb-46d5-bb66-0ca7959e18d1)
