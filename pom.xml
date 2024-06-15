@@ -189,7 +189,7 @@
           <configuration>
             <suiteXmlFiles>
 <!--              <suiteXmlFile>testng.xml</suiteXmlFile>-->
-              <suiteXmlFile>Naukri_updateDot.xml</suiteXmlFile>
+              <suiteXmlFile>Naukri_update_removeDot.xml</suiteXmlFile>
             </suiteXmlFiles>
           </configuration>
         </plugin>
