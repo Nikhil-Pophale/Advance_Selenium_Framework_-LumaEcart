@@ -42,7 +42,7 @@ public class DriverManagerTH_Local {
     public static void down() {
         if (Objects.nonNull(DriverManagerTH_Local.getDriver())) {
 //            getDriver().close();
-//            getDriver().quit();
+            getDriver().quit();
             unload();
         }
     }
