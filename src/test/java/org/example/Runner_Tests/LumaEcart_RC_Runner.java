@@ -1,23 +1,22 @@
 package org.example.Runner_Tests;
 
 import io.qameta.allure.Description;
+import org.TTA.Naukri_Page.homepage;
 import org.TTA.Pages.PageObjectModel.AddToCart;
 import org.TTA.Pages.PageObjectModel.Checkout;
 import org.TTA.Pages.PageObjectModel.Login;
 import org.TTA.Pages.PageObjectModel.Registation;
 import org.example.basic.BaseTest;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
 
 public class LumaEcart_RC_Runner extends BaseTest {
 
     @Test(priority = 4)
     @Description("Verify Login with valid email and password")
-    public void TC_001() throws Exception {
+    public void Verify_Login_with_valid_email_and_password() throws Exception {
         Login login = new Login();
         login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
         login.Verify_Login_with_valid_email_and_password();
@@ -30,7 +29,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
 
     @Test(priority = 0)
     @Description("Verify Login with invalid email and invalid password")
-    public void TC_002() throws Exception {
+    public void Verify_Login_with_invalid_email_and_invalid_password() throws Exception {
         Login login = new Login();
         login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
         login.Verify_Login_with_invalid_email_and_invalid_password();
@@ -41,8 +40,8 @@ public class LumaEcart_RC_Runner extends BaseTest {
     }
 
     @Test(priority = 1)
-    @Description("Verify L2gin with keeping  fields empty")
-    public void TC_003() throws Exception {
+    @Description("Verify Login with keeping  fields empty")
+    public void Verify_Login_with_keeping_fields_empty() throws Exception {
         Login login = new Login();
         login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
         login.test_keeping_field_empty();
@@ -54,7 +53,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
 
     @Test(priority = 2)
     @Description("Verify Login with keeping password fields empty")
-    public void TC_004() throws Exception {
+    public void Verify_Login_with_keeping_password_fields_empty() throws Exception {
         Login login = new Login();
         login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
         login.test_keeping_passwordX_field_empty();
@@ -66,7 +65,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
 
     @Test(priority = 3)
     @Description("Verify Registration with  Invalid email and appropriate error message is displayed")
-    public void TC_005() throws Exception {
+    public void Verify_Registration_with__Invalid_email_and_appropriate_error_message_is_displayed() throws Exception {
         Registation registation = new Registation();
         registation.openUrl("https://magento.softwaretestingboard.com/customer/account/create/");
         registation.Registration_with_Invalid_email();
@@ -75,9 +74,9 @@ public class LumaEcart_RC_Runner extends BaseTest {
         System.out.println(error_msg);
     }
 
-    @Description("Verify Registration with  Invalid email and appropriate error message is displayed")
+    @Description("Verify Registration with  already email registered and appropriate error message is displayed")
     @Test(priority = 5)
-    public void TC_006() throws Exception {
+    public void Verify_Registration_with_already_email_registered_and_appropriate_error_message_is_displayed() throws Exception {
         Registation registation = new Registation();
         registation.openUrl("https://magento.softwaretestingboard.com/customer/account/create/");
         registation.Registration_with_already_registered_email();
@@ -88,7 +87,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
 
     @Description("Verify Registration with  Keeping all the fields empty")
     @Test(priority = 6)
-    public void TC_007() throws Exception {
+    public void Verify_Registration_with__Keeping_all_the_fields_empty() throws Exception {
         Registation registation = new Registation();
         registation.openUrl("https://magento.softwaretestingboard.com/customer/account/create/");
         registation.TC_004();
@@ -99,7 +98,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
 
     @Test(priority = 7)
     @Description("Verify Registration with Invalid weak password ")
-    public void TC_008() throws Exception {
+    public void Verify_Registration_with_Invalid_weak_password() throws Exception {
         Registation registation = new Registation();
         registation.openUrl("https://magento.softwaretestingboard.com/customer/account/create/");
         registation.Registration_with_Invalid_weak_password();
@@ -109,8 +108,8 @@ public class LumaEcart_RC_Runner extends BaseTest {
     }
 
     @Test(priority = 8)
-    @Description("Verify Registration with Invalid weak password ")
-    public void TC_009() throws Exception {
+    @Description("Verify Registration with valid data")
+    public void Verify_Registration_with_valid_data() throws Exception {
         Registation registation = new Registation();
         registation.openUrl("https://magento.softwaretestingboard.com/customer/account/create/");
         registation.Registration_with_all_valid_data();
@@ -120,8 +119,8 @@ public class LumaEcart_RC_Runner extends BaseTest {
     }
 
     @Test(priority = 9)
-    @Description("Verify Registration with Invalid weak password ")
-    public void TC_010() throws Exception {
+    @Description("Verify Add to cart when Sku is out of Stock")
+    public void Verify_Add_to_cart_when_Sku_is_out_of_Stock() throws Exception {
         Login login = new Login();
         login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
         login.Verify_Login_with_valid_email_and_password();
@@ -133,21 +132,20 @@ public class LumaEcart_RC_Runner extends BaseTest {
     }
 
     @Test(priority = 10)
-    @Description("Verify Registration with Invalid weak password ")
-    public void TC_011() throws Exception {
+    @Description("Verify_user_can_add_product__to_cart_and_is_reflected_in_list")
+    public void Verify_user_can_add_product_to_cart_and_is_reflected_in_list() throws Exception {
         Login login = new Login();
         login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
         login.Verify_Login_with_valid_email_and_password();
         AddToCart addToCart = new AddToCart();
         addToCart.addtoCart();
-//        String OtofStock=addToCart.outofstk();
-//        Assert.assertEquals(OtofStock, "The requested qty is not available");
-//        System.out.println(OtofStock);
+        String addtocartNotify = addToCart.AddedtoCartmsg();
+        System.out.println(addtocartNotify);
     }
 
     @Test(priority = 11)
-    @Description("Verify Registration with Invalid weak password ")
-    public void TC_012() throws Exception {
+    @Description("Verify_Add_to_cart_Add_to_Wishlist_Functionality")
+    public void Verify_Add_to_cart_Add_to_Wishlist_Functionality() throws Exception {
         Login login = new Login();
         login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
         login.Verify_Login_with_valid_email_and_password();
@@ -158,22 +156,22 @@ public class LumaEcart_RC_Runner extends BaseTest {
         System.out.println(AddedtoWishlistNotify);
     }
 
-    @Test(priority = 12)
-    @Description("Verify Registration with Invalid weak password ")
-    public void TC_013() throws Exception {
-        Login login = new Login();
-        login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
-        login.Verify_Login_with_valid_email_and_password();
-        AddToCart addToCart = new AddToCart();
-        addToCart.addtoWishlist();
-        String AddedtoWishlistNotify = addToCart.addedtowishlistmsg();
-        Assert.assertEquals(AddedtoWishlistNotify, "Affirm Water Bottle has been added to your Wish List. Click here to continue shopping.");
-        System.out.println(AddedtoWishlistNotify);
-    }
+//    @Test(priority = 12)
+//    @Description("Verify Registration with Invalid weak password ")
+//    public void TC_013() throws Exception {
+//        Login login = new Login();
+//        login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
+//        login.Verify_Login_with_valid_email_and_password();
+//        AddToCart addToCart = new AddToCart();
+//        addToCart.addtoWishlist();
+//        String AddedtoWishlistNotify = addToCart.addedtowishlistmsg();
+//        Assert.assertEquals(AddedtoWishlistNotify, "Affirm Water Bottle has been added to your Wish List. Click here to continue shopping.");
+//        System.out.println(AddedtoWishlistNotify);
+//    }
 
     @Test(priority = 13)
-    @Description("Verify Registration with Invalid weak password ")
-    public void TC_014() throws Exception {
+    @Description("Verify_user_can_remove_product_from_Cart_list")
+    public void Verify_user_can_remove_product_from_Cart_list() throws Exception {
         Login login = new Login();
         login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
         login.Verify_Login_with_valid_email_and_password().afterLogin();
@@ -183,14 +181,14 @@ public class LumaEcart_RC_Runner extends BaseTest {
     }
 
     @Test(priority = 14)
-    @Description("Verify User can place the order")
-    public void TC_015() throws Exception {
+    @Description("Verify_user_can_add_product__to_cart_and_is_reflected_in_list")
+    public void Verify_user_can_add_product__to_cart_and_is_reflected_in_list() throws Exception {
         Login login = new Login();
         login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
         login.Verify_Login_with_valid_email_and_password().afterLogin();
-        AddToCart addToCart=new AddToCart();
+        AddToCart addToCart = new AddToCart();
         addToCart.addtoCart();
-        Checkout checkout=new Checkout();
+        Checkout checkout = new Checkout();
         checkout.placeanOrder();
 //        Checkout checkout = new AddToCart().addtoCart().afterAtoCart();
 //        checkout.placeanOrder();
@@ -201,8 +199,8 @@ public class LumaEcart_RC_Runner extends BaseTest {
 
     @Test(priority = 15)
     @Description("Verify Checkout without selecting Shipping methods")
-    public void TC_016() throws Exception {
-        AddToCart addToCart=new AddToCart();
+    public void Verify_Checkout_without_selecting_Shipping_methods() throws Exception {
+        AddToCart addToCart = new AddToCart();
         addToCart.openUrl("https://magento.softwaretestingboard.com/");
         Checkout checkout = new AddToCart().addtoCart().afterAtoCart();
         checkout.Checkout_without_selecting_Shipping_methods();
@@ -213,7 +211,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
 
     @Test(priority = 16)
     @Description("Verify Order_billing_reflected_on_checkout_page")
-    public void TC_017() throws Exception {
+    public void Verify_Order_billing_reflected_on_checkout_page() throws Exception {
         Login login = new Login();
         login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
         login.Verify_Login_with_valid_email_and_password();
@@ -226,7 +224,7 @@ public class LumaEcart_RC_Runner extends BaseTest {
 
     @Test(priority = 17)
     @Description("Verify purchase_with_applying_invalid_discount_code")
-    public void TC_018() throws Exception {
+    public void Verify_purchase_with_applying_invalid_discount_code() throws Exception {
         Login login = new Login();
         login.openUrl("https://magento.softwaretestingboard.com/customer/account/login/");
         login.Verify_Login_with_valid_email_and_password();
@@ -237,6 +235,17 @@ public class LumaEcart_RC_Runner extends BaseTest {
 //     System.out.println(address);
     }
 
+    @Test
+    public void Verify_update_profile_removedot() throws Exception {
+        homepage H = new homepage();
+        H.update_Profile_remove_dot();
+    }
+
+    @Test
+    public void Verify_update_profile_dot() throws Exception {
+        homepage H = new homepage();
+        H.update_Profile_with_dot();
+    }
 
 
 }

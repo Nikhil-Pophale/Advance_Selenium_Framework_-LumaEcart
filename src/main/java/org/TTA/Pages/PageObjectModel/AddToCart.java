@@ -31,7 +31,8 @@ public class AddToCart extends Common {
     private By thkumsg = By.linkText("Thank you for your purchase!");
     private By deletebtnCartlist = By.xpath("//a[@class=\"action action-delete\"]");
     private By addtoWishlistbtn = By.xpath("//span[text()=\"Add to Wish List\"]");
-    private By addtoWishlistMsg = By.xpath("//div[@data-ui-id=\"message-success\"]");
+//    private By addtoWishlistMsg = By.xpath("//div[@data-ui-id=\"message-success\"]");
+    private By addtoWishlistMsg = By.xpath("//div[@role=\"alert\"]/div");
     private By gearCategory = By.xpath("//span[text()=\"Gear\"]");
     private By lumalogo = By.xpath("//a[@class=\"logo\"]");
     private By outofstockmsg = By.xpath("//div[text()=\"The requested qty is not available\"]");
@@ -42,7 +43,7 @@ public class AddToCart extends Common {
         DriverManagerTH_Local.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         clickElemnet(addtocartbtn);
 //        System.out.println(presenceOfElement(addtocartmsg).getText());
-        Thread.sleep(7000);
+        FluentWait(cartIcon);
         clickElemnet(cartIcon);
 //        DriverManagerTH_Local.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 //        presenceOfElement(procedtochkout).click();
@@ -60,6 +61,7 @@ public class AddToCart extends Common {
         FluentWait(itemBottle);
         clickElemnet(itemBottle);
         Thread.sleep(4000);
+        FluentWait(addtocartbtn);
         clickElemnet(addtocartbtn);
         presenceOfElement(addedtocartmsg);
         System.out.println(addedtocartmsg);
@@ -75,8 +77,6 @@ public class AddToCart extends Common {
         DriverManagerTH_Local.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         FluentWait(addtoWishlistbtn);
         clickElemnet(addtoWishlistbtn);
-        System.out.println(addtoWishlistMsg);
-
         return this;
     }
 
@@ -99,6 +99,15 @@ public class AddToCart extends Common {
         presenceOfElement(outofstockmsg);
         return getElemnet(outofstockmsg).getText();
     }
+    public String AddedtoCartmsg() {
+        try {
+            presenceOfElement(addedtocartmsg);
+        } catch (Exception e) {
+            presenceOfElement(addedtocartmsg);
+        }
+        return getElemnet(addedtocartmsg).getText();
+    }
+
 
     public String addedtowishlistmsg() {
         try {
@@ -106,7 +115,6 @@ public class AddToCart extends Common {
         } catch (Exception e) {
             presenceOfElement(addtoWishlistMsg);
         }
-
         return getElemnet(addtoWishlistMsg).getText();
     }
 

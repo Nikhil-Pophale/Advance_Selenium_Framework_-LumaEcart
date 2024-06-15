@@ -31,6 +31,9 @@ public class DriverManagerTH_Local {
 
     public static void init() throws MalformedURLException {
         if (Objects.isNull(DriverManagerTH_Local.getDriver())) {
+//            ChromeOptions options=new ChromeOptions();
+//            options.addArguments("--headless");
+//            WebDriver driver = new ChromeDriver(options);
             WebDriver driver = new ChromeDriver();
             setDriver(driver);
         }
@@ -39,7 +42,7 @@ public class DriverManagerTH_Local {
     public static void down() {
         if (Objects.nonNull(DriverManagerTH_Local.getDriver())) {
 //            getDriver().close();
-            getDriver().quit();
+//            getDriver().quit();
             unload();
         }
     }
