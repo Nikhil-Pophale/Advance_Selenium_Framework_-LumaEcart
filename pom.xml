@@ -188,7 +188,8 @@
           <version>2.22.1</version>
           <configuration>
             <suiteXmlFiles>
-              <suiteXmlFile>testng.xml</suiteXmlFile>
+<!--              <suiteXmlFile>testng.xml</suiteXmlFile>-->
+              <suiteXmlFile>Naukri_updateDot.xml</suiteXmlFile>
             </suiteXmlFiles>
           </configuration>
         </plugin>
